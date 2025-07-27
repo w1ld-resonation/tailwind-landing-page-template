@@ -8,7 +8,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
         <div
           className={`grid gap-10 py-8 sm:grid-cols-12 md:py-12 ${border ? "border-t [border-image:linear-gradient(to_right,transparent,var(--color-slate-200),transparent)1]" : ""}`}
         >
-          {/* Блок о компании */}
+          {/* Company Info */}
           <div className="space-y-2 sm:col-span-12 lg:col-span-4">
             <div>
               <Logo />
@@ -18,38 +18,38 @@ export default function Footer({ border = false }: { border?: boolean }) {
             </div>
           </div>
 
-          {/* Навигация */}
+          {/* Navigation */}
           <div className="space-y-2 sm:col-span-6 md:col-span-4 lg:col-span-3">
-            <h3 className="text-sm font-medium">Платформа</h3>
+            <h3 className="text-sm font-medium">Platform</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link className="text-gray-600 hover:text-black transition" href="#about">
-                  О нас
+                  About
                 </Link>
               </li>
               <li>
                 <Link className="text-gray-600 hover:text-black transition" href="#api">
-                  API-доступ
+                  API Access
                 </Link>
               </li>
               <li>
                 <Link className="text-gray-600 hover:text-black transition" href="#partners">
-                  Для партнёров
+                  Partners
                 </Link>
               </li>
               <li>
                 <Link className="text-gray-600 hover:text-black transition" href="#contact">
-                  Контакты
+                  Contact
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Контакты */}
+          {/* Contact */}
           <div className="space-y-2 sm:col-span-6 md:col-span-4 lg:col-span-3">
-            <h3 className="text-sm font-medium">Контакты</h3>
+            <h3 className="text-sm font-medium">Contact</h3>
             <ul className="space-y-1 text-sm text-gray-600">
-              <li>Грузия, Тбилиси</li>
+              <li>Tbilisi, Georgia</li>
               <li>
                 <a className="hover:text-black transition" href="mailto:hello@wildflow.io">
                   hello@wildflow.io
@@ -65,7 +65,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
         </div>
       </div>
 
-      {/* Glow + надпись */}
+      {/* Glow + Title */}
       <div className="relative -mt-16 h-60 w-full" aria-hidden="true">
         <div className="pointer-events-none absolute left-1/2 -z-10 -translate-x-1/2 text-center text-[340px] font-bold leading-none before:bg-gradient-to-b before:from-gray-200 before:to-gray-100/30 before:to-80% before:bg-clip-text before:text-transparent before:content-['WILDFLOW'] after:absolute after:inset-0 after:bg-gray-300/70 after:bg-clip-text after:text-transparent after:mix-blend-darken after:content-['WILDFLOW'] after:[text-shadow:0_1px_0_white]"></div>
         <div
