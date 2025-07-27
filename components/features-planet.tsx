@@ -86,17 +86,6 @@ export default function FeaturesPlanet() {
               <p className="text-[15px] text-gray-400">Understand your systems from day one. Metrics, logs, dashboards — no setup needed.</p>
             </article>
 
-            <article>
-              <h3 className="mb-2 flex items-center space-x-2 font-medium text-gray-200">
-                <svg className="fill-blue-500" xmlns="http://www.w3.org/2000/svg" width={16} height={16}>
-                  <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0Zm0 14.5A6.5 6.5 0 1 1 8 1.5a6.5 6.5 0 0 1 0 13Z" />
-                </svg>
-                <span>Accessible Anywhere</span>
-              </h3>
-              <p className="text-[15px] text-gray-400">
-                Your infrastructure, your terms — globally. WILDFLOW runs anywhere, speaks every protocol, and never asks where you're from.
-              </p>
-            </article>
           </div>
         </div>
       </div>
