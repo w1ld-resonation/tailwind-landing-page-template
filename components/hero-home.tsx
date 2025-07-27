@@ -83,8 +83,7 @@ export default function HeroHome() {
                 data-aos="zoom-y-out"
                 data-aos-delay={300}
               >
-                WILDFLOW is a product-driven engineering team building secure,
-                API-first, deeply integrated systems — from simple sites to global platforms.
+                WILDFLOW is a team of developers building secure, API-first, integrated systems — from simple websites to global platforms.
               </p>
               <p
                 className="mb-8 text-base text-gray-500"
