@@ -11,7 +11,7 @@ export default function SignIn() {
       <div className="mb-10 text-center">
         <h1 className="text-4xl font-bold text-gray-900">Access WILDFLOW</h1>
         <p className="mt-2 text-gray-500 text-sm">
-          Secure entry to your infrastructure control panel
+          Secure entry to your control panel
         </p>
       </div>
 
