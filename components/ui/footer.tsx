@@ -18,7 +18,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
               <Logo />
             </div>
             <div className="text-sm text-gray-600">
-              &copy; {new Date().getFullYear()} WILDFLOW LLC. Empowering ideas. Unleashing flow.
+              &copy; {new Date().getFullYear()} WILDFLOW LLC. Unleashing flow.
             </div>
           </div>
 
@@ -53,7 +53,6 @@ export default function Footer({ border = false }: { border?: boolean }) {
           <div className="space-y-2 sm:col-span-6 md:col-span-4 lg:col-span-3">
             <h3 className="text-sm font-medium">Contact</h3>
             <ul className="space-y-1 text-sm text-gray-600">
-              <li>Tbilisi, Georgia</li>
               <li>
                 <a
                   className="hover:text-black transition"
