@@ -8,17 +8,17 @@ const commandText = "build flow —easy —scalable —secure";
 export default function HeroHome() {
   const [open, setOpen] = useState(false);
   const [typedCommand, setTypedCommand] = useState("");
+  const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    let index = 0;
-    const typingInterval = setInterval(() => {
-      setTypedCommand((prev) => prev + commandText[index]);
-      index++;
-      if (index === commandText.length) clearInterval(typingInterval);
-    }, 80);
-
-    return () => clearInterval(typingInterval);
-  }, []);
+    if (index < commandText.length) {
+      const timeout = setTimeout(() => {
+        setTypedCommand((prev) => prev + commandText[index]);
+        setIndex((prev) => prev + 1);
+      }, 80);
+      return () => clearTimeout(timeout);
+    }
+  }, [index]);
 
   return (
     <section className="relative">
@@ -94,7 +94,7 @@ export default function HeroHome() {
                 <div>
                   <span className="text-blue-400">wildflow.dev</span>
                   <span className="ml-1 text-white"> ~ %</span>
-                  <span className="ml-2 text-white"> {typedCommand}</span>
+                  <span className="ml-2 text-white">{typedCommand}</span>
                   <span className="ml-2 text-white animate-pulse">█</span>
                 </div>
               </div>
