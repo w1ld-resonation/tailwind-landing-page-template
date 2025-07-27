@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "WILDFLOW",
-  description: "DEV",
+  title: "WILDFLOW — Build & Deploy Smart.",
+  description: "APIs, automation, and sovereign systems — built for freedom, scaled globally.",
 };
 
 import Hero from "@/components/hero-home";
