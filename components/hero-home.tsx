@@ -143,7 +143,6 @@ export default function HeroHome() {
                   <span className="ml-2 text-gray-500"> —easy —scalable —secure ... build on process...</span>
                 </div>
                 <div>
-                  <span className="ml-2 text-white"> Are you sure you want to continue building your flow? (yes/no) ?</span>
                   <span className="ml-2 text-green-500"> Press y/n to confirm.</span>
                   <span className="ml-2 text-white animate-pulse">█</span>
                 </div>
