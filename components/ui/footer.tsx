@@ -24,23 +24,14 @@ export default function Footer({ border = false }: { border?: boolean }) {
 
           {/* Navigation */}
           <div className="space-y-2 sm:col-span-6 md:col-span-4 lg:col-span-3">
-            <h3 className="text-sm font-medium">Platform</h3>
+            <h3 className="text-sm font-medium">About</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link className="text-gray-600 hover:text-black transition" href="#about">
-                  About
+                <Link className="text-gray-600 hover:text-black transition" href="/company">
+                  Company
                 </Link>
               </li>
-              <li>
-                <Link className="text-gray-600 hover:text-black transition" href="#api">
-                  API Access
-                </Link>
-              </li>
-              <li>
-                <Link className="text-gray-600 hover:text-black transition" href="#partners">
-                  Partners
-                </Link>
-              </li>
+        
               <li>
                 <Link className="text-gray-600 hover:text-black transition" href="#contact">
                   Contact
