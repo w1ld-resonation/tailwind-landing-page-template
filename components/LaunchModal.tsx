@@ -25,45 +25,47 @@ export default function LaunchModal() {
               ×
             </button>
 
-            <h2 className="text-2xl font-bold mb-2 text-gray-900">🚀 Start your project</h2>
+            <h2 className="text-2xl font-bold mb-2 text-gray-900">
+              🚀 Let's build together
+            </h2>
             <p className="mb-6 text-sm text-gray-500">
-              Submit your request and our team will get back to you shortly.
+              Tell us more about your idea — we'll contact you shortly to launch it with WILDFLOW.
             </p>
 
             <form className="space-y-4">
               <input
                 type="text"
-                placeholder="Your name"
-                className="w-full border p-3 rounded bg-gray-50"
+                placeholder="Full Name"
+                className="w-full border border-gray-200 p-3 rounded bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 required
               />
               <input
                 type="email"
-                placeholder="Email"
-                className="w-full border p-3 rounded bg-gray-50"
+                placeholder="Business Email"
+                className="w-full border border-gray-200 p-3 rounded bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 required
               />
               <input
-                type="text"
-                placeholder="Phone number"
-                className="w-full border p-3 rounded bg-gray-50"
+                type="tel"
+                placeholder="Phone (optional)"
+                className="w-full border border-gray-200 p-3 rounded bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
               <input
                 type="text"
-                placeholder="Company (optional)"
-                className="w-full border p-3 rounded bg-gray-50"
+                placeholder="Company / Team Name"
+                className="w-full border border-gray-200 p-3 rounded bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
               <textarea
-                placeholder="Brief description of your project"
-                className="w-full border p-3 rounded bg-gray-50"
+                placeholder="What are you building, and how can we help?"
+                className="w-full border border-gray-200 p-3 rounded bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 rows={4}
                 required
               />
               <button
                 type="submit"
-                className="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700 transition"
+                className="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700 transition font-semibold"
               >
-                Submit Request
+                Send Request
               </button>
             </form>
           </div>
