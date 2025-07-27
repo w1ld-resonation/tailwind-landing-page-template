@@ -1,21 +1,33 @@
-// app/launch/page.tsx
 export default function LaunchPage() {
   return (
-    <main className="min-h-screen px-4 py-20 bg-white text-gray-900">
-      <div className="mx-auto max-w-2xl">
-        <h1 className="text-4xl font-bold mb-6">Let’s Build Together</h1>
-        <p className="mb-8 text-lg">
-          Tell us about your project, your goals, or just say hello. WILDFLOW is here to empower you.
-        </p>
-
-        <form className="space-y-6" action="mailto:support@wildflow.dev" method="POST" encType="text/plain">
-          <div>
-            <label className="block mb-1 font-medium">Your name</label>
-            <input
-              type="text"
-              name="name"
-              className="w-full rounded border border-gray-300 px-4 py-2"
-              required
-            />
-          </div>
-          <
+    <main className="p-10">
+      <h1 className="text-4xl font-bold text-white mb-4">🚀 Запуск проекта</h1>
+      <p className="text-lg text-gray-300 mb-6">
+        Расскажите нам о своей идее, и мы поможем воплотить её в реальность.
+      </p>
+      <form className="space-y-4 max-w-md">
+        <input
+          type="text"
+          placeholder="Ваше имя"
+          className="w-full rounded-md border border-gray-700 bg-gray-900 p-3 text-white"
+        />
+        <input
+          type="email"
+          placeholder="Email"
+          className="w-full rounded-md border border-gray-700 bg-gray-900 p-3 text-white"
+        />
+        <textarea
+          placeholder="Опишите проект"
+          className="w-full rounded-md border border-gray-700 bg-gray-900 p-3 text-white"
+          rows={5}
+        />
+        <button
+          type="submit"
+          className="w-full rounded-md bg-blue-600 p-3 text-white hover:bg-blue-700"
+        >
+          Отправить
+        </button>
+      </form>
+    </main>
+  );
+}
