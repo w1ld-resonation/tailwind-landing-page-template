@@ -120,7 +120,7 @@ export default function HeroHome() {
             </div>
           </div>
 
-          {/* Hero image */}
+          {/* Hero image / Terminal simulation */}
           <div
             className="mx-auto max-w-3xl"
             data-aos="zoom-y-out"
@@ -133,15 +133,26 @@ export default function HeroHome() {
                 </span>
               </div>
               <div className="font-mono text-gray-400 space-y-1 text-sm sm:text-base">
-  <div className="text-gray-600">Last login: {new Date().toLocaleString()} on ttys001</div>
-  <div>
-    <span className="text-blue-400">wildflow.dev</span> ~ %
-    <span className="text-white"> build flow</span>
-    <span className="text-gray-500"> —easy —scalable —secure</span>
-  </div>
-</div>
+                <div className="text-gray-600">
+                  Last login: {new Date().toLocaleString()} on ttys001
+                </div>
+                <div>
+                  <span className="text-blue-400">wildflow.dev</span>
+                  <span className="ml-1 text-white"> ~ %</span>
+                  <span className="ml-2 text-white"> build flow</span>
+                  <span className="ml-2 text-gray-500"> —easy —scalable —secure</span>
+                </div>
+                <div>
+                  <span className="text-blue-400">wildflow.dev</span>
+                  <span className="ml-1 text-white"> ~ %</span>
+                  <span className="ml-2 text-white"> confirm?</span>
+                  <span className="ml-2 text-green-500"> [y/n]</span>
+                  <span className="ml-2 text-white animate-pulse">█</span>
+                </div>
+              </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>
