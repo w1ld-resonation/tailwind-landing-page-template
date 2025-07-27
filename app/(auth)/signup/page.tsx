@@ -1,16 +1,18 @@
 export const metadata = {
-  title: "Sign Up - Simple",
-  description: "Page description",
+  title: "Create Account – WILDFLOW",
+  description: "Register to access WILDFLOW infrastructure tools and services.",
 };
 
 export default function SignUp() {
   return (
     <>
-      <div className="mb-10">
-        <h1 className="text-4xl font-bold">Create your account</h1>
+      <div className="mb-10 text-center">
+        <h1 className="text-4xl font-bold text-gray-900">Create your account</h1>
+        <p className="mt-2 text-gray-500 text-sm">
+          Join WILDFLOW and start building sovereign infrastructure today.
+        </p>
       </div>
 
-      {/* Form */}
       <form>
         <div className="space-y-4">
           <div>
@@ -24,7 +26,7 @@ export default function SignUp() {
               id="name"
               className="form-input w-full py-2"
               type="text"
-              placeholder="Corey Barker"
+              placeholder="Selim Ataniiazov"
               required
             />
           </div>
@@ -39,7 +41,7 @@ export default function SignUp() {
               id="email"
               className="form-input w-full py-2"
               type="email"
-              placeholder="corybarker@email.com"
+              placeholder="you@wildflow.dev"
               required
             />
           </div>
@@ -53,8 +55,8 @@ export default function SignUp() {
             <input
               id="phone"
               className="form-input w-full py-2"
-              type="text"
-              placeholder="(+750) 932-8907"
+              type="tel"
+              placeholder="+995 555 123 456"
               required
             />
           </div>
@@ -75,36 +77,33 @@ export default function SignUp() {
             />
           </div>
         </div>
+
         <div className="mt-6 space-y-3">
-          <button className="btn w-full bg-linear-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%]">
-            Register
+          <button className="btn w-full bg-blue-600 text-white hover:bg-blue-700 transition">
+            Create Account
           </button>
-          <div className="text-center text-sm italic text-gray-400">Or</div>
-          <button className="btn w-full bg-linear-to-t from-gray-900 to-gray-700 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%]">
+          <div className="text-center text-sm text-gray-400">or</div>
+          <button className="btn w-full bg-gray-800 text-white hover:bg-gray-700 transition">
             Continue with GitHub
           </button>
         </div>
       </form>
 
-      {/* Bottom link */}
-      <div className="mt-6 text-center">
-        <p className="text-sm text-gray-500">
-          By signing up, you agree to the{" "}
-          <a
-            className="whitespace-nowrap font-medium text-gray-700 underline hover:no-underline"
-            href="#0"
-          >
-            Terms of Service
-          </a>{" "}
-          and{" "}
-          <a
-            className="whitespace-nowrap font-medium text-gray-700 underline hover:no-underline"
-            href="#0"
-          >
-            Privacy Policy
-          </a>
-          .
-        </p>
+      <div className="mt-6 text-center text-sm text-gray-500">
+        By signing up, you agree to our{" "}
+        <a
+          href="/terms"
+          className="underline hover:no-underline text-gray-700"
+        >
+          Terms of Service
+        </a>{" "}
+        and{" "}
+        <a
+          href="/privacy"
+          className="underline hover:no-underline text-gray-700"
+        >
+          Privacy Policy
+        </a>.
       </div>
     </>
   );
