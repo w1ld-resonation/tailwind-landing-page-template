@@ -132,10 +132,14 @@ export default function HeroHome() {
                   wildflow.dev
                 </span>
               </div>
-              <div className="font-mono text-gray-500">
-                <span className="text-gray-200">build flow </span>{" "}
-                <span>-easy -scalable -secure</span>
-              </div>
+              <div className="font-mono text-gray-400 space-y-1 text-sm sm:text-base">
+  <div className="text-gray-600">Last login: {new Date().toLocaleString()} on ttys001</div>
+  <div>
+    <span className="text-blue-400">wildflow.dev</span> ~ %
+    <span className="text-white"> build flow</span>
+    <span className="text-gray-500"> —easy —scalable —secure</span>
+  </div>
+</div>
             </div>
           </div>
         </div>
