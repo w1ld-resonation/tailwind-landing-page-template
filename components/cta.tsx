@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Modal from "@/components/modal";
+import Modal from "@/components/LaunchModal";
 
 export default function Cta() {
   const [showModal, setShowModal] = useState(false);
