@@ -12,36 +12,53 @@ export default function HeroHome() {
 
       {/* MODAL */}
       {open && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 px-4">
-          <div className="bg-white rounded-xl shadow-xl max-w-md w-full p-6 relative">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 px-4 backdrop-blur-sm">
+          <div className="bg-white rounded-xl shadow-2xl max-w-lg w-full p-8 relative">
             <button
-              className="absolute top-3 right-3 text-gray-400 hover:text-gray-700"
+              className="absolute top-4 right-4 text-gray-400 hover:text-gray-700 text-xl"
               onClick={() => setOpen(false)}
+              aria-label="Close"
             >
-              ✕
+              ×
             </button>
-            <h2 className="text-2xl font-bold mb-4">🚀 Start your project</h2>
+            <h2 className="text-2xl font-bold mb-2 text-gray-900">🚀 Let's build together</h2>
+            <p className="mb-6 text-sm text-gray-500">
+              Tell us more about your project — and we'll help you deploy it with sovereignty.
+            </p>
             <form className="space-y-4">
               <input
                 type="text"
                 placeholder="Your name"
                 className="w-full border p-3 rounded bg-gray-50"
+                required
               />
               <input
                 type="email"
                 placeholder="Email"
                 className="w-full border p-3 rounded bg-gray-50"
+                required
+              />
+              <input
+                type="tel"
+                placeholder="Phone number"
+                className="w-full border p-3 rounded bg-gray-50"
+              />
+              <input
+                type="text"
+                placeholder="Company (optional)"
+                className="w-full border p-3 rounded bg-gray-50"
               />
               <textarea
-                placeholder="Tell us briefly about your project"
+                placeholder="Brief description of your project"
                 className="w-full border p-3 rounded bg-gray-50"
                 rows={4}
+                required
               />
               <button
                 type="submit"
-                className="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700"
+                className="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700 transition"
               >
-                Submit
+                Submit Request
               </button>
             </form>
           </div>
@@ -58,22 +75,23 @@ export default function HeroHome() {
               data-aos="zoom-y-out"
               data-aos-delay={150}
             >
-              Build smarter, freer infrastructure
+              Build sovereign, scalable infrastructure
             </h1>
             <div className="mx-auto max-w-3xl">
               <p
-                className="mb-8 text-lg text-gray-700"
+                className="mb-6 text-lg text-gray-700"
                 data-aos="zoom-y-out"
                 data-aos-delay={300}
               >
-                WILDFLOW is a studio of engineers and system thinkers creating scalable, sovereign, and accessible infrastructure — from automations to APIs, from bootstrapped deployments to cloud-native freedom.
+                WILDFLOW is a product-driven engineering team building secure,
+                API-first, deeply integrated systems — from simple sites to global platforms.
               </p>
               <p
                 className="mb-8 text-base text-gray-500"
                 data-aos="zoom-y-out"
                 data-aos-delay={350}
               >
-                Infrastructure should never trap you. No lock-in. No secrets. Global access, clean ownership, and peace of mind.
+                We develop full-stack solutions, custom APIs, storefronts, integrations, licensing automation, and infrastructure you can truly own.
               </p>
 
               {/* CTA Buttons */}
