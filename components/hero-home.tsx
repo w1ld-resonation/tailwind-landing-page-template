@@ -75,7 +75,7 @@ export default function HeroHome() {
               data-aos="zoom-y-out"
               data-aos-delay={150}
             >
-              Meet the WILDFLOW team
+              Meet the team
             </h1>
             <div className="mx-auto max-w-3xl">
               <p
@@ -90,7 +90,7 @@ export default function HeroHome() {
                 data-aos="zoom-y-out"
                 data-aos-delay={350}
               >
-                We develop full-stack solutions, custom APIs, storefronts, integrations, licensing automation, and infrastructure you can truly own.
+                We develop full-stack solutions, custom APIs, storefronts, integrations, e-commerce solutions, licensing automation, and infrastructure you can truly own.
               </p>
 
               {/* CTA Buttons */}
@@ -133,8 +133,8 @@ export default function HeroHome() {
                 </span>
               </div>
               <div className="font-mono text-gray-500">
-                <span className="text-gray-200">wildflow.dev =</span>{" "}
-                <span>easy, scalable and secure</span>
+                <span className="text-gray-200">build flow </span>{" "}
+                <span>-easy -scalable -secure</span>
               </div>
             </div>
           </div>
