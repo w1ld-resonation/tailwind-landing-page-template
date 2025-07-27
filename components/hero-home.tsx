@@ -140,13 +140,11 @@ export default function HeroHome() {
                   <span className="text-blue-400">wildflow.dev</span>
                   <span className="ml-1 text-white"> ~ %</span>
                   <span className="ml-2 text-white"> build flow</span>
-                  <span className="ml-2 text-gray-500"> —easy —scalable —secure</span>
+                  <span className="ml-2 text-gray-500"> —easy —scalable —secure ... build on process...</span>
                 </div>
                 <div>
-                  <span className="text-blue-400">wildflow.dev</span>
-                  <span className="ml-1 text-white"> ~ %</span>
-                  <span className="ml-2 text-white"> confirm?</span>
-                  <span className="ml-2 text-green-500"> [y/n]</span>
+                  <span className="ml-2 text-white"> Are you sure you want to continue building your flow? (yes/no) ?</span>
+                  <span className="ml-2 text-green-500"> Press y/n to confirm.</span>
                   <span className="ml-2 text-white animate-pulse">█</span>
                 </div>
               </div>
