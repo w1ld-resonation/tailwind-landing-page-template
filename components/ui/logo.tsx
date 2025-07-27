@@ -9,35 +9,33 @@ export default function Logo() {
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
+        width="24"
+        height="16"
         viewBox="0 0 64 32"
         fill="none"
+        className="mt-[1px]"
       >
-        {/* Первая волна */}
+        {/* Волна 1 */}
         <path
-          d="M4 24c4-4 8 4 12 0s8 4 12 0s8 4 12 0"
+          d="M0 6c4-4 8 4 12 0s8 4 12 0s8 4 12 0"
           stroke="#2563EB"
           strokeWidth="2"
-          fill="none"
         />
-        {/* Вторая волна ниже */}
+        {/* Волна 2 */}
         <path
-          d="M4 28c4-4 8 4 12 0s8 4 12 0s8 4 12 0"
+          d="M0 12c4-4 8 4 12 0s8 4 12 0s8 4 12 0"
           stroke="#2563EB"
           strokeWidth="2"
-          fill="none"
         />
-        {/* Третья волна ещё ниже */}
+        {/* Волна 3 */}
         <path
-          d="M4 32c4-4 8 4 12 0s8 4 12 0s8 4 12 0"
+          d="M0 18c4-4 8 4 12 0s8 4 12 0s8 4 12 0"
           stroke="#2563EB"
           strokeWidth="2"
-          fill="none"
         />
       </svg>
 
-      <span className="text-lg font-bold tracking-tight text-blue-700">
+      <span className="text-lg font-extrabold tracking-tight text-blue-700">
         WILDFLOW
       </span>
     </Link>
