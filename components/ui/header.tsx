@@ -26,14 +26,8 @@ export default function Header() {
               href="mailto:support@wildflow.dev"
               className="btn-sm bg-white text-gray-800 shadow-sm hover:bg-gray-50"
             >
-              Support
+              Contact Us
             </a>
-            <Link
-              href="/launch"
-              className="btn-sm bg-blue-700 text-white shadow-sm hover:bg-blue-800"
-            >
-              Launch
-            </Link>
           </div>
         </div>
       </div>
