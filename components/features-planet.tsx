@@ -13,9 +13,12 @@ export default function FeaturesPlanet() {
         <div className="py-12 md:py-20">
           {/* Section header */}
           <div className="mx-auto max-w-3xl pb-16 text-center md:pb-20">
-            <h2 className="text-3xl font-bold text-gray-200 md:text-4xl">
-              WILDFLOW helps you build infrastructure the way it should be — simple, scalable, yours.
+            <h2 className="text-3xl font-bold text-gray-200 md:text-4xl leading-snug">
+              The WILDFLOW DEV team helps you build infrastructure the way it should be — simple, scalable, yours.
             </h2>
+            <p className="mt-4 text-lg text-gray-400">
+              From API connections to full-stack integration, we make your systems work together beautifully — so you can launch faster and grow without limits.
+            </p>
           </div>
 
           {/* Planet */}
@@ -24,12 +27,12 @@ export default function FeaturesPlanet() {
               <div className="relative inline-flex rounded-full before:absolute before:inset-0 before:-z-10 before:scale-[.85] before:animate-[pulse_4s_cubic-bezier(.4,0,.6,1)_infinite] before:bg-linear-to-b before:from-blue-900 before:to-sky-700/50 before:blur-3xl after:absolute after:inset-0 after:rounded-[inherit] after:[background:radial-gradient(closest-side,var(--color-blue-500),transparent)]">
                 <Image className="rounded-full bg-gray-900" src={PlanetImg} width={400} height={400} alt="Planet" />
                 <div className="pointer-events-none" aria-hidden="true">
-                  <Image className="absolute -right-64 -top-20 z-10 max-w-none" src={PlanetOverlayImg} width={789} height={755} alt="Planet decoration" />
+                  <Image className="absolute -right-64 -top-20 z-10 max-w-none hidden md:block" src={PlanetOverlayImg} width={789} height={755} alt="Planet decoration" />
                   <div>
-                    <Image className="absolute -left-28 top-16 z-10 animate-[float_4s_ease-in-out_infinite_both] opacity-80 transition-opacity duration-500" src={PlanetTagImg01} width={253} height={56} alt="Tag 01" />
-                    <Image className="absolute left-56 top-7 z-10 animate-[float_4s_ease-in-out_infinite_1s_both] opacity-30 transition-opacity duration-500" src={PlanetTagImg02} width={241} height={56} alt="Tag 02" />
-                    <Image className="absolute -left-20 bottom-24 z-10 animate-[float_4s_ease-in-out_infinite_2s_both] opacity-25 transition-opacity duration-500" src={PlanetTagImg03} width={243} height={56} alt="Tag 03" />
-                    <Image className="absolute bottom-32 left-64 z-10 animate-[float_4s_ease-in-out_infinite_3s_both] opacity-80 transition-opacity duration-500" src={PlanetTagImg04} width={251} height={56} alt="Tag 04" />
+                    <Image className="absolute -left-28 top-16 z-10 animate-[float_4s_ease-in-out_infinite_both] opacity-80 transition-opacity duration-500" src={PlanetTagImg01} width={253} height={56} alt="" />
+                    <Image className="absolute left-56 top-7 z-10 animate-[float_4s_ease-in-out_infinite_1s_both] opacity-30 transition-opacity duration-500" src={PlanetTagImg02} width={241} height={56} alt="" />
+                    <Image className="absolute -left-20 bottom-24 z-10 animate-[float_4s_ease-in-out_infinite_2s_both] opacity-25 transition-opacity duration-500" src={PlanetTagImg03} width={243} height={56} alt="" />
+                    <Image className="absolute bottom-32 left-64 z-10 animate-[float_4s_ease-in-out_infinite_3s_both] opacity-80 transition-opacity duration-500" src={PlanetTagImg04} width={251} height={56} alt="" />
                   </div>
                 </div>
               </div>
@@ -85,7 +88,6 @@ export default function FeaturesPlanet() {
               </h3>
               <p className="text-[15px] text-gray-400">Understand your systems from day one. Metrics, logs, dashboards — no setup needed.</p>
             </article>
-
           </div>
         </div>
       </div>
