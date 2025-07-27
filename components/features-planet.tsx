@@ -36,7 +36,7 @@ export default function FeaturesPlanet() {
             </div>
           </div>
 
-          {/* Grid */}
+          {/* Feature Grid */}
           <div className="grid overflow-hidden sm:grid-cols-2 lg:grid-cols-3 *:relative *:p-6 *:before:absolute *:before:bg-gray-800 *:before:[block-size:100vh] *:before:[inline-size:1px] *:before:[inset-block-start:0] *:before:[inset-inline-start:-1px] *:after:absolute *:after:bg-gray-800 *:after:[block-size:1px] *:after:[inline-size:100vw] *:after:[inset-block-start:-1px] *:after:[inset-inline-start:0] md:*:p-10">
             <article>
               <h3 className="mb-2 flex items-center space-x-2 font-medium text-gray-200">
@@ -45,6 +45,7 @@ export default function FeaturesPlanet() {
               </h3>
               <p className="text-[15px] text-gray-400">Start your platform with one command. No servers, no configs — just results.</p>
             </article>
+
             <article>
               <h3 className="mb-2 flex items-center space-x-2 font-medium text-gray-200">
                 <svg className="fill-blue-500" xmlns="http://www.w3.org/2000/svg" width={16} height={16}><path d="M14.29 2.614a1 1 0 0 0-1.58-1.228L6.407 9.492l-3.2-3.2a1 1 0 1 0-1.414 1.415l4 4a1 1 0 0 0 1.496-.093l7-9Z" /></svg>
@@ -52,6 +53,7 @@ export default function FeaturesPlanet() {
               </h3>
               <p className="text-[15px] text-gray-400">Connect your stack to any service. APIs, automations, webhooks — we do the plumbing.</p>
             </article>
+
             <article>
               <h3 className="mb-2 flex items-center space-x-2 font-medium text-gray-200">
                 <svg className="fill-blue-500" xmlns="http://www.w3.org/2000/svg" width={16} height={16}><path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z" /></svg>
@@ -59,6 +61,7 @@ export default function FeaturesPlanet() {
               </h3>
               <p className="text-[15px] text-gray-400">Self-host or scale in the cloud. Your infra, your rules, your keys.</p>
             </article>
+
             <article>
               <h3 className="mb-2 flex items-center space-x-2 font-medium text-gray-200">
                 <svg className="fill-blue-500" xmlns="http://www.w3.org/2000/svg" width={16} height={16}><path d="M10 1a1 1 0 0 0-1 1v12a1 1 0 1 0 2 0V2a1 1 0 0 0-1-1Z" /></svg>
@@ -66,6 +69,7 @@ export default function FeaturesPlanet() {
               </h3>
               <p className="text-[15px] text-gray-400">Use your own code, or let us scaffold it. From backend to UI — we’re flexible.</p>
             </article>
+
             <article>
               <h3 className="mb-2 flex items-center space-x-2 font-medium text-gray-200">
                 <svg className="fill-blue-500" xmlns="http://www.w3.org/2000/svg" width={16} height={16}><path d="M6 2a6 6 0 0 1 12 0v12a6 6 0 0 1-12 0V2Z" /></svg>
@@ -73,12 +77,25 @@ export default function FeaturesPlanet() {
               </h3>
               <p className="text-[15px] text-gray-400">Global-ready from day one. Multilingual, multi-region, multi-wow.</p>
             </article>
+
             <article>
               <h3 className="mb-2 flex items-center space-x-2 font-medium text-gray-200">
                 <svg className="fill-blue-500" xmlns="http://www.w3.org/2000/svg" width={16} height={16}><path d="M2 2h12v12H2z" /></svg>
                 <span>Analytics Included</span>
               </h3>
-              <p className="text-[15px] text-gray-400">Understand your users from day one. Metrics, logs, dashboards — no setup needed.</p>
+              <p className="text-[15px] text-gray-400">Understand your systems from day one. Metrics, logs, dashboards — no setup needed.</p>
+            </article>
+
+            <article>
+              <h3 className="mb-2 flex items-center space-x-2 font-medium text-gray-200">
+                <svg className="fill-blue-500" xmlns="http://www.w3.org/2000/svg" width={16} height={16}>
+                  <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0Zm0 14.5A6.5 6.5 0 1 1 8 1.5a6.5 6.5 0 0 1 0 13Z" />
+                </svg>
+                <span>Accessible Anywhere</span>
+              </h3>
+              <p className="text-[15px] text-gray-400">
+                Your infrastructure, your terms — globally. WILDFLOW runs anywhere, speaks every protocol, and never asks where you're from.
+              </p>
             </article>
           </div>
         </div>
