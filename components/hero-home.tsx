@@ -75,7 +75,7 @@ export default function HeroHome() {
               data-aos="zoom-y-out"
               data-aos-delay={150}
             >
-              Build sovereign, scalable infrastructure
+              Meet the WILDFLOW team
             </h1>
             <div className="mx-auto max-w-3xl">
               <p
@@ -133,8 +133,8 @@ export default function HeroHome() {
                 </span>
               </div>
               <div className="font-mono text-gray-500">
-                <span className="text-gray-200">wildflow_dev =</span>{" "}
-                <span>— make it easy</span>
+                <span className="text-gray-200">wildflow.dev =</span>{" "}
+                <span>easy, scalable and secure</span>
               </div>
             </div>
           </div>
