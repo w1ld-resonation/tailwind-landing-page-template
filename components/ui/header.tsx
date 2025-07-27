@@ -22,12 +22,12 @@ export default function Header() {
 
           {/* CTA */}
           <div className="flex flex-1 items-center justify-end gap-3">
-            <Link
-              href="https://t.me/wildflow"
+            <a
+              href="mailto:support@wildflow.dev"
               className="btn-sm bg-white text-gray-800 shadow-sm hover:bg-gray-50"
             >
-              Telegram
-            </Link>
+              Support
+            </a>
             <Link
               href="/launch"
               className="btn-sm bg-blue-700 text-white shadow-sm hover:bg-blue-800"
