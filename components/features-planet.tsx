@@ -46,7 +46,7 @@ export default function FeaturesPlanet() {
                 <svg className="fill-blue-500" xmlns="http://www.w3.org/2000/svg" width={16} height={16}><path d="M2 4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4Z" /></svg>
                 <span>Instant Launch</span>
               </h3>
-              <p className="text-[15px] text-gray-400">Start your platform with one command. No servers, no configs — just results.</p>
+              <p className="text-[15px] text-gray-400">We build your website/infrastructure so it can be deployed like LEGO — no heavy IT department required.</p>
             </article>
 
             <article>
@@ -78,7 +78,7 @@ export default function FeaturesPlanet() {
                 <svg className="fill-blue-500" xmlns="http://www.w3.org/2000/svg" width={16} height={16}><path d="M6 2a6 6 0 0 1 12 0v12a6 6 0 0 1-12 0V2Z" /></svg>
                 <span>Localization Built-In</span>
               </h3>
-              <p className="text-[15px] text-gray-400">Global-ready from day one. Multilingual, multi-region, multi-wow.</p>
+              <p className="text-[15px] text-gray-400">Built for B2B, B2C, e-commerce, and marketplaces. Whatever you need — we make it work, and we make it beautiful.</p>
             </article>
 
             <article>
