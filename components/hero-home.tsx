@@ -21,16 +21,48 @@ export default function HeroHome() {
               data-aos="zoom-y-out"
             >
               <div className="-mx-0.5 flex justify-center -space-x-3">
-                {[Avatar01, Avatar02, Avatar03, Avatar04, Avatar05, Avatar06].map((src, i) => (
-                  <Image
-                    key={i}
-                    className="box-content rounded-full border-2 border-gray-50"
-                    src={src}
-                    width={32}
-                    height={32}
-                    alt={`User ${i + 1}`}
-                  />
-                ))}
+                <Image
+                  className="box-content rounded-full border-2 border-gray-50"
+                  src={Avatar01}
+                  width={32}
+                  height={32}
+                  alt="Avatar 01"
+                />
+                <Image
+                  className="box-content rounded-full border-2 border-gray-50"
+                  src={Avatar02}
+                  width={32}
+                  height={32}
+                  alt="Avatar 02"
+                />
+                <Image
+                  className="box-content rounded-full border-2 border-gray-50"
+                  src={Avatar03}
+                  width={32}
+                  height={32}
+                  alt="Avatar 03"
+                />
+                <Image
+                  className="box-content rounded-full border-2 border-gray-50"
+                  src={Avatar04}
+                  width={32}
+                  height={32}
+                  alt="Avatar 04"
+                />
+                <Image
+                  className="box-content rounded-full border-2 border-gray-50"
+                  src={Avatar05}
+                  width={32}
+                  height={32}
+                  alt="Avatar 05"
+                />
+                <Image
+                  className="box-content rounded-full border-2 border-gray-50"
+                  src={Avatar06}
+                  width={32}
+                  height={32}
+                  alt="Avatar 06"
+                />
               </div>
             </div>
             <h1
@@ -38,7 +70,7 @@ export default function HeroHome() {
               data-aos="zoom-y-out"
               data-aos-delay={150}
             >
-              The future of digital product delivery starts here
+              Building smarter digital infrastructure
             </h1>
             <div className="mx-auto max-w-3xl">
               <p
@@ -46,7 +78,7 @@ export default function HeroHome() {
                 data-aos="zoom-y-out"
                 data-aos-delay={300}
               >
-                WILDFLOW is your all-in-one platform to sell and distribute licenses, subscriptions, courses, and services — instantly, globally, and on your terms.
+                WILDFLOW is a studio of engineers and system thinkers designing fast, scalable and beautiful infrastructure — from API integrations and automation to full-cycle software delivery.
               </p>
               <div className="relative before:absolute before:inset-0 before:border-y before:[border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1]">
                 <div
@@ -59,7 +91,7 @@ export default function HeroHome() {
                     href="/launch"
                   >
                     <span className="relative inline-flex items-center">
-                      Get Started{" "}
+                      Start your project{" "}
                       <span className="ml-1 tracking-normal text-blue-300 transition-transform group-hover:translate-x-0.5">
                         -&gt;
                       </span>
@@ -75,7 +107,6 @@ export default function HeroHome() {
               </div>
             </div>
           </div>
-
           {/* Hero image */}
           <div
             className="mx-auto max-w-3xl"
@@ -88,20 +119,9 @@ export default function HeroHome() {
                   wildflow.dev
                 </span>
               </div>
-              <div className="font-mono text-gray-500 [&_span]:opacity-0">
-                <span className="animate-[code-1_10s_infinite] text-gray-200">
-                  curl wildflow.dev/api
-                </span>{" "}
-                <span className="animate-[code-2_10s_infinite]">
-                  — fast & secure
-                </span>
-                <br />
-                <span className="animate-[code-3_10s_infinite]">
-                  power your digital goods
-                </span>{" "}
-                <span className="animate-[code-4_10s_infinite]">
-                  join hundreds of creators
-                </span>
+              <div className="font-mono text-gray-500">
+                <span className="text-gray-200">npm install</span>{" "}
+                <span>— coming soon</span>
               </div>
             </div>
           </div>
