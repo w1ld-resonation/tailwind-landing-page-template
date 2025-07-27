@@ -73,7 +73,7 @@ export default function HeroHome() {
                 data-aos="zoom-y-out"
                 data-aos-delay={350}
               >
-                Infrastructure should never trap you. No lock-in. No secrets. No begging developers to return. Just global access, clean ownership, and peace of mind.
+                Infrastructure should never trap you. No lock-in. No secrets. Global access, clean ownership, and peace of mind.
               </p>
 
               {/* CTA Buttons */}
