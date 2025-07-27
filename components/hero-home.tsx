@@ -134,8 +134,8 @@ export default function HeroHome() {
                 </span>
               </div>
               <div className="font-mono text-gray-500">
-                <span className="text-gray-200">npm install</span>{" "}
-                <span>— coming soon</span>
+                <span className="text-gray-200">wildflow_dev =</span>{" "}
+                <span>— make it easy</span>
               </div>
             </div>
           </div>
