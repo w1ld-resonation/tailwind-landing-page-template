@@ -12,18 +12,17 @@ export default function Header() {
             <Logo />
           </div>
 
-          {/* Navigation */}
-          {/* 
-          <ul className="hidden md:flex flex-1 items-center justify-center gap-6 text-sm font-medium text-gray-700">
-            <li><Link href="/about" className="hover:text-gray-900">About</Link></li>
-            <li><Link href="/api" className="hover:text-gray-900">API</Link></li>
-            <li><Link href="/partners" className="hover:text-gray-900">Partners</Link></li>
-            <li><Link href="/contact" className="hover:text-gray-900">Contact</Link></li>
-          </ul>
-          */}
-
           {/* CTA */}
           <div className="flex flex-1 items-center justify-end gap-3">
+            {/* Login Button */}
+            <Link
+              href="/signin"
+              className="btn-sm text-gray-700 hover:text-white hover:bg-gray-800 border border-gray-200 shadow-sm"
+            >
+              Log In
+            </Link>
+
+            {/* Contact Button */}
             <a
               href="mailto:support@wildflow.dev"
               className="btn-sm bg-blue-700 text-white shadow-sm hover:bg-blue-800"
