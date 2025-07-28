@@ -55,6 +55,11 @@ export default function LaunchModal() {
                 placeholder="Company / Team"
                 className="w-full border border-gray-200 p-3 rounded bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
+              <input
+                type="url"
+                placeholder="Website / Product URL (if any)"
+                className="w-full border border-gray-200 p-3 rounded bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
               <textarea
                 placeholder="Tell us about your project or needs"
                 className="w-full border border-gray-200 p-3 rounded bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500"
