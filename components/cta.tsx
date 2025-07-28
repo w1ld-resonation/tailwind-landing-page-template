@@ -85,6 +85,18 @@ export default function Cta() {
                     placeholder="Phone number"
                     className="w-full border p-3 rounded bg-gray-50"
                   />
+                  <input
+                    type="text"
+                    name="company"
+                    placeholder="Company"
+                    className="w-full border p-3 rounded bg-gray-50"
+                  />
+                    <input
+                    type="text"
+                    name="country"
+                    placeholder="Country"
+                    className="w-full border p-3 rounded bg-gray-50"
+                  />
                   <textarea
                     name="message"
                     placeholder="Tell us briefly about your project"
