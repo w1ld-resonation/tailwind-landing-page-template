@@ -102,13 +102,13 @@ export default function HeroHome() {
                   <input
                     type="text"
                     name="company"
-                    placeholder="Company (optional)"
+                    placeholder="Company"
                     className="w-full border p-3 rounded bg-gray-50"
                   />
                     <input
                     type="text"
                     name="country"
-                    placeholder="Country (optional)"
+                    placeholder="Country"
                     className="w-full border p-3 rounded bg-gray-50"
                   />
                   <textarea
