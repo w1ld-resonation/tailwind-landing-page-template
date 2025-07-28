@@ -57,6 +57,18 @@ export default function Cta() {
                     className="w-full border p-3 rounded bg-gray-50"
                     required
                   />
+                   <input
+                    type="text"
+                    name="company"
+                    placeholder="Company"
+                    className="w-full border p-3 rounded bg-gray-50"
+                  />
+                    <input
+                    type="text"
+                    name="country"
+                    placeholder="Country"
+                    className="w-full border p-3 rounded bg-gray-50"
+                  />
                   <input
                     type="email"
                     name="email"
@@ -83,18 +95,6 @@ export default function Cta() {
                     type="tel"
                     name="phone"
                     placeholder="Phone number"
-                    className="w-full border p-3 rounded bg-gray-50"
-                  />
-                  <input
-                    type="text"
-                    name="company"
-                    placeholder="Company"
-                    className="w-full border p-3 rounded bg-gray-50"
-                  />
-                    <input
-                    type="text"
-                    name="country"
-                    placeholder="Country"
                     className="w-full border p-3 rounded bg-gray-50"
                   />
                   <textarea
