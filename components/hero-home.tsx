@@ -94,12 +94,6 @@ export default function HeroHome() {
                    className="w-full border p-3 rounded bg-gray-50"
                   />
                   <input
-                    type="tel"
-                    name="phone"
-                    placeholder="Phone number"
-                    className="w-full border p-3 rounded bg-gray-50"
-                  />
-                  <input
                     type="text"
                     name="company"
                     placeholder="Company"
@@ -109,6 +103,12 @@ export default function HeroHome() {
                     type="text"
                     name="country"
                     placeholder="Country"
+                    className="w-full border p-3 rounded bg-gray-50"
+                  />
+                   <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Phone number"
                     className="w-full border p-3 rounded bg-gray-50"
                   />
                   <textarea
