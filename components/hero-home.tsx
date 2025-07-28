@@ -40,15 +40,46 @@ export default function HeroHome() {
               Tell us more about your project — and we'll help you deploy it with sovereignty.
             </p>
             <form className="space-y-4">
-              <input type="text" placeholder="Your name" className="w-full border p-3 rounded bg-gray-50" required />
-              <input type="email" placeholder="Email" className="w-full border p-3 rounded bg-gray-50" required />
-              <input type="tel" placeholder="Phone number" className="w-full border p-3 rounded bg-gray-50" />
-              <input type="text" placeholder="Company (optional)" className="w-full border p-3 rounded bg-gray-50" />
-              <textarea placeholder="Brief description of your project" className="w-full border p-3 rounded bg-gray-50" rows={4} required />
-              <button type="submit" className="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700 transition">
-                Submit Request
-              </button>
-            </form>
+  <input
+    type="text"
+    placeholder="Your name"
+    className="w-full border p-3 rounded bg-gray-50"
+    required
+  />
+  <input
+    type="email"
+    placeholder="Email"
+    className="w-full border p-3 rounded bg-gray-50"
+    required
+  />
+  <input
+    type="url"
+    placeholder="Website"
+    className="w-full border p-3 rounded bg-gray-50"
+  />
+  <input
+    type="tel"
+    placeholder="Phone number"
+    className="w-full border p-3 rounded bg-gray-50"
+  />
+  <input
+    type="text"
+    placeholder="Company (optional)"
+    className="w-full border p-3 rounded bg-gray-50"
+  />
+  <textarea
+    placeholder="Brief description of your project"
+    className="w-full border p-3 rounded bg-gray-50"
+    rows={4}
+    required
+  />
+  <button
+    type="submit"
+    className="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700 transition"
+  >
+    Submit Request
+  </button>
+</form>
           </div>
         </div>
       )}
