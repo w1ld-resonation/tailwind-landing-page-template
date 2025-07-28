@@ -2,8 +2,6 @@
 
 import { useEffect, useState } from "react";
 import PageIllustration from "@/components/page-illustration";
-import PhoneInput from "react-phone-input-2";
-import 'react-phone-input-2/lib/style.css';
 
 const commandText = "build flow —easy —scalable —secure";
 
@@ -12,7 +10,6 @@ export default function HeroHome() {
   const [typedCommand, setTypedCommand] = useState("");
   const [index, setIndex] = useState(0);
   const [submitted, setSubmitted] = useState(false);
-  const [phone, setPhone] = useState("");
 
   useEffect(() => {
     if (index < commandText.length) {
@@ -54,18 +51,14 @@ export default function HeroHome() {
                     e.preventDefault();
                     const form = e.currentTarget;
                     const formData = new FormData(form);
-                    formData.set("phone", phone);
-
                     const response = await fetch("https://formspree.io/f/xgvzynvl", {
                       method: "POST",
                       headers: { Accept: "application/json" },
                       body: formData,
                     });
-
                     if (response.ok) {
                       setSubmitted(true);
                       form.reset();
-                      setPhone("");
                     } else {
                       alert("There was an error sending your message.");
                     }
@@ -86,29 +79,25 @@ export default function HeroHome() {
                     required
                   />
                   <input
-                    type="url"
-                    name="website"
-                    placeholder="https://"
-                    defaultValue="https://"
-                    onFocus={(e) => {
-                      if (!e.target.value) e.target.value = "https://";
-                    }}
-                    onBlur={(e) => {
-                      if (e.target.value && !e.target.value.startsWith("http")) {
-                        e.target.value = "https://" + e.target.value;
-                      }
-                    }}
-                    className="w-full border p-3 rounded bg-gray-50"
+                   type="url"
+                   name="website"
+                   placeholder="https://"
+                   defaultValue=""
+                   onFocus={(e) => {
+                   if (!e.target.value) e.target.value = "https://";
+                   }}
+                   onBlur={(e) => {
+                   if (e.target.value && !e.target.value.startsWith("http")) {
+                   e.target.value = "https://" + e.target.value;
+                   }
+                   }}
+                   className="w-full border p-3 rounded bg-gray-50"
                   />
-                  <PhoneInput
-                    country={'us'}
-                    value={phone}
-                    onChange={setPhone}
-                    inputProps={{
-                      name: 'phone',
-                      required: false,
-                      className: 'w-full border p-3 rounded bg-gray-50'
-                    }}
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Phone number"
+                    className="w-full border p-3 rounded bg-gray-50"
                   />
                   <input
                     type="text"
@@ -116,7 +105,7 @@ export default function HeroHome() {
                     placeholder="Company (optional)"
                     className="w-full border p-3 rounded bg-gray-50"
                   />
-                  <input
+                    <input
                     type="text"
                     name="country"
                     placeholder="Country (optional)"
