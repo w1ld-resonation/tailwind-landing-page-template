@@ -24,9 +24,9 @@ export default function Footer({ border = false }: { border?: boolean }) {
             <div className="text-sm font-mono text-gray-600 hover:text-black transition">
               <a
                 className="underline underline-offset-4"
-                href="mailto:build@wildflow.dev"
+                href="mailto:contact@wildflow.dev"
               >
-                wildflow.dev ~ % contact build@wildflow.dev
+                contact us: contact@wildflow.dev
               </a>
             </div>
           </div>
