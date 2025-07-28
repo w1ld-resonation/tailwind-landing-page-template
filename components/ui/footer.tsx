@@ -20,13 +20,13 @@ export default function Footer({ border = false }: { border?: boolean }) {
               </div>
             </div>
 
-            {/* Email */}
-            <div className="text-sm">
+            {/* CLI-style Email */}
+            <div className="text-sm font-mono text-gray-600 hover:text-black transition">
               <a
-                className="text-gray-600 hover:text-black transition"
-                href="mailto:support@wildflow.dev"
+                className="underline underline-offset-4"
+                href="mailto:build@wildflow.dev"
               >
-                support@wildflow.dev
+                wildflow.dev ~ % contact build@wildflow.dev
               </a>
             </div>
           </div>
