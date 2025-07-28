@@ -24,7 +24,7 @@ export default function Header() {
 
             {/* Contact Button */}
             <a
-              href="mailto:support@wildflow.dev"
+              href="mailto:contact@wildflow.dev"
               className="btn-sm bg-blue-700 text-white shadow-sm hover:bg-blue-800"
             >
               Contact Us
