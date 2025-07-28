@@ -74,7 +74,7 @@ export default function HeroHome() {
                     Start your project <span className="ml-1 tracking-normal text-blue-300 transition-transform group-hover:translate-x-0.5">-&gt;</span>
                   </span>
                 </button>
-                <a className="btn w-full bg-white text-gray-800 shadow-sm hover:bg-gray-50 sm:ml-4 sm:w-auto" href="mailto:support@wildflow.dev">
+                <a className="btn w-full bg-white text-gray-800 shadow-sm hover:bg-gray-50 sm:ml-4 sm:w-auto" href="mailto:contact@wildflow.dev">
                   Contact Us
                 </a>
               </div>
