@@ -79,11 +79,20 @@ export default function HeroHome() {
                     required
                   />
                   <input
-                    type="url"
-                    name="website"
-                    placeholder="Website"
-                    className="w-full border p-3 rounded bg-gray-50"
-                  />
+  type="url"
+  name="website"
+  placeholder="https://"
+  defaultValue="https://"
+  onFocus={(e) => {
+    if (!e.target.value) e.target.value = "https://";
+  }}
+  onBlur={(e) => {
+    if (e.target.value && !e.target.value.startsWith("http")) {
+      e.target.value = "https://" + e.target.value;
+    }
+  }}
+  className="w-full border p-3 rounded bg-gray-50"
+/>
                   <input
                     type="tel"
                     name="phone"
