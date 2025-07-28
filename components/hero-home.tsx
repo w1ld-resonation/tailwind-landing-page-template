@@ -42,6 +42,7 @@ export default function HeroHome() {
             <form className="space-y-4">
               <input type="text" placeholder="Your name" className="w-full border p-3 rounded bg-gray-50" required />
               <input type="email" placeholder="Email" className="w-full border p-3 rounded bg-gray-50" required />
+              <input name="website" type="url" placeholder="Website" value={form.website} onChange={handleChange} className="w-full border p-3 rounded bg-gray-50" />
               <input type="tel" placeholder="Phone number" className="w-full border p-3 rounded bg-gray-50" />
               <input type="text" placeholder="Company (optional)" className="w-full border p-3 rounded bg-gray-50" />
               <textarea placeholder="Brief description of your project" className="w-full border p-3 rounded bg-gray-50" rows={4} required />
