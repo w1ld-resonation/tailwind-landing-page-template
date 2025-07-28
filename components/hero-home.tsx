@@ -122,8 +122,8 @@ export default function HeroHome() {
               </>
             ) : (
               <div className="text-center py-12">
-                <h3 className="text-2xl font-semibold text-green-700 mb-2">✅ Thank you!</h3>
-                <p className="text-gray-600">Your request has been sent successfully.</p>
+                <h3 className="text-2xl font-semibold text-green-700 mb-2">✅ Your request has been received.</h3>
+                <p className="text-gray-600">Our team will review your case and contact you shortly.</p>
                 <button
                   onClick={() => {
                     setOpen(false);
@@ -131,7 +131,7 @@ export default function HeroHome() {
                   }}
                   className="mt-6 text-blue-600 hover:underline"
                 >
-                  Close
+                  Go back
                 </button>
               </div>
             )}
