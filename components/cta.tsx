@@ -37,11 +37,22 @@ export default function Cta() {
                     e.preventDefault();
                     const form = e.currentTarget;
                     const formData = new FormData(form);
+
+                    const name = formData.get("name") || "";
+                    const company = formData.get("company") || "";
+                    const website = formData.get("website") || "";
+
+                    const subjectParts = [`New project from ${name}`];
+                    if (company) subjectParts.push(`(${company})`);
+                    if (website) subjectParts.push(`→ ${website}`);
+                    formData.set("_subject", subjectParts.join(" "));
+
                     const response = await fetch("https://formspree.io/f/xgvzynvl", {
                       method: "POST",
                       headers: { Accept: "application/json" },
                       body: formData,
                     });
+
                     if (response.ok) {
                       setSubmitted(true);
                       form.reset();
@@ -79,13 +90,13 @@ export default function Cta() {
                     }}
                     className="w-full border p-3 rounded bg-gray-50"
                   />
-                   <input
+                  <input
                     type="text"
                     name="company"
                     placeholder="Company"
                     className="w-full border p-3 rounded bg-gray-50"
                   />
-                    <input
+                  <input
                     type="text"
                     name="country"
                     placeholder="Country"
