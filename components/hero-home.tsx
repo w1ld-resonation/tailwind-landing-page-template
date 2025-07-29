@@ -51,11 +51,22 @@ export default function HeroHome() {
                     e.preventDefault();
                     const form = e.currentTarget;
                     const formData = new FormData(form);
+
+                    const name = formData.get("name") || "";
+                    const company = formData.get("company") || "";
+                    const website = formData.get("website") || "";
+
+                    const subjectParts = [`New project from ${name}`];
+                    if (company) subjectParts.push(`(${company})`);
+                    if (website) subjectParts.push(`→ ${website}`);
+                    formData.set("_subject", subjectParts.join(" "));
+
                     const response = await fetch("https://formspree.io/f/xgvzynvl", {
                       method: "POST",
                       headers: { Accept: "application/json" },
                       body: formData,
                     });
+
                     if (response.ok) {
                       setSubmitted(true);
                       form.reset();
@@ -64,20 +75,8 @@ export default function HeroHome() {
                     }
                   }}
                 >
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="Your name"
-                    className="w-full border p-3 rounded bg-gray-50"
-                    required
-                  />
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Email"
-                    className="w-full border p-3 rounded bg-gray-50"
-                    required
-                  />
+                  <input type="text" name="name" placeholder="Your name" className="w-full border p-3 rounded bg-gray-50" required />
+                  <input type="email" name="email" placeholder="Email" className="w-full border p-3 rounded bg-gray-50" required />
                   <input
                     type="url"
                     name="website"
@@ -93,41 +92,11 @@ export default function HeroHome() {
                     }}
                     className="w-full border p-3 rounded bg-gray-50"
                   />
-                  <input
-                    type="text"
-                    name="company"
-                    placeholder="Company"
-                    className="w-full border p-3 rounded bg-gray-50"
-                  />
-                  <input
-                    type="text"
-                    name="country"
-                    placeholder="Country"
-                    className="w-full border p-3 rounded bg-gray-50"
-                  />
-                  <input
-                    type="tel"
-                    name="phone"
-                    placeholder="Phone number"
-                    className="w-full border p-3 rounded bg-gray-50"
-                  />
-                  <textarea
-                    name="message"
-                    placeholder="Brief description of your project"
-                    className="w-full border p-3 rounded bg-gray-50"
-                    rows={4}
-                    required
-                  />
-                  {/* 💡 subject for email */}
-                  <input
-                    type="hidden"
-                    name="_subject"
-                    value="New project request from wildflow.dev"
-                  />
-                  <button
-                    type="submit"
-                    className="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700 transition"
-                  >
+                  <input type="text" name="company" placeholder="Company" className="w-full border p-3 rounded bg-gray-50" />
+                  <input type="text" name="country" placeholder="Country" className="w-full border p-3 rounded bg-gray-50" />
+                  <input type="tel" name="phone" placeholder="Phone number" className="w-full border p-3 rounded bg-gray-50" />
+                  <textarea name="message" placeholder="Brief description of your project" className="w-full border p-3 rounded bg-gray-50" rows={4} required />
+                  <button type="submit" className="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700 transition">
                     Submit Request
                   </button>
                 </form>
@@ -155,11 +124,7 @@ export default function HeroHome() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="pb-12 pt-32 md:pb-20 md:pt-40">
           <div className="pb-12 text-center md:pb-16">
-            <h1
-              className="mb-6 border-y text-5xl font-bold text-gray-900 [border-image:linear-gradient(to_right,transparent,var(--color-slate-300),transparent)1] md:text-6xl"
-              data-aos="zoom-y-out"
-              data-aos-delay={150}
-            >
+            <h1 className="mb-6 border-y text-5xl font-bold text-gray-900 [border-image:linear-gradient(to_right,transparent,var(--color-slate-300),transparent)1] md:text-6xl" data-aos="zoom-y-out" data-aos-delay={150}>
               Meet the team
             </h1>
             <div className="mx-auto max-w-3xl">
@@ -169,26 +134,14 @@ export default function HeroHome() {
               <p className="mb-8 text-base text-gray-500" data-aos="zoom-y-out" data-aos-delay={350}>
                 We develop full-stack solutions, custom APIs, storefronts, integrations, e-commerce solutions, licensing automation, and infrastructure you can truly own.
               </p>
-              <div
-                className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center"
-                data-aos="zoom-y-out"
-                data-aos-delay={450}
-              >
-                <button
-                  onClick={() => setOpen(true)}
-                  className="btn group mb-4 w-full bg-gradient-to-t from-blue-600 to-blue-500 text-white shadow-sm hover:brightness-110 sm:mb-0 sm:w-auto"
-                >
+              <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center" data-aos="zoom-y-out" data-aos-delay={450}>
+                <button onClick={() => setOpen(true)} className="btn group mb-4 w-full bg-gradient-to-t from-blue-600 to-blue-500 text-white shadow-sm hover:brightness-110 sm:mb-0 sm:w-auto">
                   <span className="relative inline-flex items-center">
                     Start your project{" "}
-                    <span className="ml-1 tracking-normal text-blue-300 transition-transform group-hover:translate-x-0.5">
-                      -&gt;
-                    </span>
+                    <span className="ml-1 tracking-normal text-blue-300 transition-transform group-hover:translate-x-0.5">-&gt;</span>
                   </span>
                 </button>
-                <a
-                  className="btn w-full bg-white text-gray-800 shadow-sm hover:bg-gray-50 sm:ml-4 sm:w-auto"
-                  href="mailto:contact@wildflow.dev"
-                >
+                <a className="btn w-full bg-white text-gray-800 shadow-sm hover:bg-gray-50 sm:ml-4 sm:w-auto" href="mailto:contact@wildflow.dev">
                   Contact Us
                 </a>
               </div>
