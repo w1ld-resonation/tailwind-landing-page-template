@@ -79,19 +79,19 @@ export default function HeroHome() {
                     required
                   />
                   <input
-                   type="url"
-                   name="website"
-                   placeholder="https://"
-                   defaultValue=""
-                   onFocus={(e) => {
-                   if (!e.target.value) e.target.value = "https://";
-                   }}
-                   onBlur={(e) => {
-                   if (e.target.value && !e.target.value.startsWith("http")) {
-                   e.target.value = "https://" + e.target.value;
-                   }
-                   }}
-                   className="w-full border p-3 rounded bg-gray-50"
+                    type="url"
+                    name="website"
+                    placeholder="https://"
+                    defaultValue=""
+                    onFocus={(e) => {
+                      if (!e.target.value) e.target.value = "https://";
+                    }}
+                    onBlur={(e) => {
+                      if (e.target.value && !e.target.value.startsWith("http")) {
+                        e.target.value = "https://" + e.target.value;
+                      }
+                    }}
+                    className="w-full border p-3 rounded bg-gray-50"
                   />
                   <input
                     type="text"
@@ -99,13 +99,13 @@ export default function HeroHome() {
                     placeholder="Company"
                     className="w-full border p-3 rounded bg-gray-50"
                   />
-                    <input
+                  <input
                     type="text"
                     name="country"
                     placeholder="Country"
                     className="w-full border p-3 rounded bg-gray-50"
                   />
-                   <input
+                  <input
                     type="tel"
                     name="phone"
                     placeholder="Phone number"
@@ -117,6 +117,12 @@ export default function HeroHome() {
                     className="w-full border p-3 rounded bg-gray-50"
                     rows={4}
                     required
+                  />
+                  {/* 💡 subject for email */}
+                  <input
+                    type="hidden"
+                    name="_subject"
+                    value="New project request from wildflow.dev"
                   />
                   <button
                     type="submit"
