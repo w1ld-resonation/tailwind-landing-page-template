@@ -131,9 +131,22 @@ export default function HeroHome() {
               <p className="mb-6 text-lg text-gray-700" data-aos="zoom-y-out" data-aos-delay={300}>
                 WILDFLOW is a team of developers building secure, API-first, integrated systems — from simple websites to global platforms.
               </p>
-              <p className="mb-8 text-base text-gray-500" data-aos="zoom-y-out" data-aos-delay={350}>
-                We develop full-stack solutions, custom APIs, storefronts, integrations, e-commerce solutions, licensing automation, and infrastructure you can truly own.
+              <p className="mb-6 text-base text-gray-500" data-aos="zoom-y-out" data-aos-delay={350}>
+                We develop full-stack solutions, custom APIs, storefronts, integrations, e-commerce systems, licensing automation, and infrastructure you can truly own.
               </p>
+              <div className="mb-10 rounded-lg border border-blue-100 bg-blue-50 p-6 text-left text-sm text-blue-900 shadow-inner" data-aos="fade-up" data-aos-delay={400}>
+                <h3 className="mb-2 text-base font-semibold text-blue-800">🧠 What is Web3?</h3>
+                <p className="mb-2">
+                  Web3 is the next evolution of the internet — built on decentralization, transparency, and user ownership.
+                  It shifts control from corporations to communities by using blockchain, tokenized identity, and open protocols.
+                </p>
+                <p className="mb-2">
+                  At WILDFLOW, we build Web3-ready systems: permissionless APIs, token-integrated platforms, and backend infrastructure designed for sovereignty and interoperability.
+                </p>
+                <p className="text-blue-700">
+                  → From smart contracts to verifiable data systems — we're building with the future in mind.
+                </p>
+              </div>
               <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center" data-aos="zoom-y-out" data-aos-delay={450}>
                 <button onClick={() => setOpen(true)} className="btn group mb-4 w-full bg-gradient-to-t from-blue-600 to-blue-500 text-white shadow-sm hover:brightness-110 sm:mb-0 sm:w-auto">
                   <span className="relative inline-flex items-center">
