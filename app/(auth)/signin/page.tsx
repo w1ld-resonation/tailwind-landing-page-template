@@ -10,12 +10,15 @@ export default function SignIn() {
     <>
       <div className="mb-10 text-center">
         <h1 className="text-4xl font-bold text-gray-900">Access WILDFLOW</h1>
-        <p className="mt-2 text-gray-500 text-sm">
-          Secure entry to your control panel
+        <p className="mt-2 text-sm text-gray-500">
+           Entry to your end user panel
         </p>
+        <div className="mt-1 text-[10px] font-mono uppercase tracking-wide text-blue-700">
+          In Web3 We Trust
+        </div>
       </div>
 
-      <form>
+      <form className="space-y-6">
         <div className="space-y-4">
           <div>
             <label
@@ -26,7 +29,7 @@ export default function SignIn() {
             </label>
             <input
               id="email"
-              className="form-input w-full py-2"
+              className="form-input w-full rounded border border-gray-300 py-2 px-3 focus:border-blue-500 focus:ring-blue-500"
               type="email"
               placeholder="you@wildflow.dev"
               required
@@ -41,7 +44,7 @@ export default function SignIn() {
             </label>
             <input
               id="password"
-              className="form-input w-full py-2"
+              className="form-input w-full rounded border border-gray-300 py-2 px-3 focus:border-blue-500 focus:ring-blue-500"
               type="password"
               autoComplete="on"
               placeholder="••••••••"
@@ -49,8 +52,8 @@ export default function SignIn() {
             />
           </div>
         </div>
-        <div className="mt-6">
-          <button className="btn w-full bg-blue-600 text-white hover:bg-blue-700 transition">
+        <div>
+          <button className="btn w-full bg-blue-700 text-white py-2 rounded hover:bg-blue-800 transition">
             Sign In
           </button>
         </div>
