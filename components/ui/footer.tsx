@@ -37,7 +37,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
 </div>
 
 <div className="text-xs text-gray-500">
-  CUIT: 20-XXXXXXXX-X
+  CUIT: 27-96432069-7
 </div>
           </div>
         </div>
