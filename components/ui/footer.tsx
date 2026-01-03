@@ -12,12 +12,18 @@ export default function Footer({ border = false }: { border?: boolean }) {
           }`}
         >
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-            {/* Logo + Text */}
+            {/* Logo + Legal */}
             <div className="space-y-2">
               <Logo />
+
               <div className="text-sm text-gray-600">
                 &copy; {new Date().getFullYear()} WILDFLOW LLC. Unleashing flow.
               </div>
+
+              <div className="text-xs text-gray-500">
+                AR Tax ID (CUIT): 27-96432069-7
+              </div>
+
               <div className="text-xs font-mono uppercase tracking-wide text-blue-700">
                 In Web3 We Trust
               </div>
@@ -32,13 +38,6 @@ export default function Footer({ border = false }: { border?: boolean }) {
                 contact us: contact@wildflow.dev
               </a>
             </div>
-            <div className="text-sm text-gray-600">
-  &copy; {new Date().getFullYear()} WILDFLOW LLC. Unleashing flow.
-</div>
-
-<div className="text-xs text-gray-500">
-  CUIT: 27-96432069-7
-</div>
           </div>
         </div>
       </div>
