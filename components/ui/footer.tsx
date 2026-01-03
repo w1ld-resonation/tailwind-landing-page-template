@@ -32,6 +32,13 @@ export default function Footer({ border = false }: { border?: boolean }) {
                 contact us: contact@wildflow.dev
               </a>
             </div>
+            <div className="text-sm text-gray-600">
+  &copy; {new Date().getFullYear()} WILDFLOW LLC. Unleashing flow.
+</div>
+
+<div className="text-xs text-gray-500">
+  CUIT: 20-XXXXXXXX-X
+</div>
           </div>
         </div>
       </div>
