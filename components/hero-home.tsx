@@ -132,7 +132,7 @@ export default function HeroHome() {
                 WILDFLOW is a team of developers building secure, API-first, integrated systems — from simple websites to global platforms.
               </p>
               <p className="mb-6 text-base text-gray-500" data-aos="zoom-y-out" data-aos-delay={350}>
-                We develop full-stack solutions, custom APIs, storefronts, integrations, e-commerce systems, licensing automation, and infrastructure you can truly own.
+                We develop full-stack solutions, custom APIs, storefronts, integrations, e-commerce systems, licensing automation, and infrastructure you can truly trust.
               </p>
               <div className="mb-10 rounded-lg border border-blue-100 bg-blue-50 p-6 text-left text-sm text-blue-900 shadow-inner" data-aos="fade-up" data-aos-delay={400}>
                 <h3 className="mb-2 text-base font-semibold text-blue-800">🧠 What is Web3?</h3>
