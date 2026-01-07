@@ -46,24 +46,6 @@ export default function HeroHome() {
                 and infrastructure you can truly trust.
               </p>
 
-              <div className="mb-10 rounded-lg border border-blue-100 bg-blue-50 p-6 text-left text-sm text-blue-900 shadow-inner">
-                <h3 className="mb-2 text-base font-semibold text-blue-800">
-                  🧠 What is Web3?
-                </h3>
-                <p className="mb-2">
-                  Web3 is the next evolution of the internet — built on
-                  decentralization, transparency, and user ownership.
-                </p>
-                <p className="mb-2">
-                  At WILDFLOW, we build Web3-ready systems: permissionless APIs,
-                  token-integrated platforms, and backend infrastructure.
-                </p>
-                <p className="text-blue-700">
-                  → From smart contracts to verifiable data systems — we're
-                  building with the future in mind.
-                </p>
-              </div>
-
               {/* Single CTA */}
               <div className="flex justify-center">
                 <a
