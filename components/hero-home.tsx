@@ -26,7 +26,8 @@ export default function HeroHome() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="pb-12 pt-32 md:pb-20 md:pt-40">
           <div className="pb-12 text-center md:pb-16">
-            <h1 className="mb-6 border-y text-5xl font-bold text-gray-900
+            <h1
+              className="mb-6 border-y text-5xl font-bold text-gray-900
               [border-image:linear-gradient(to_right,transparent,var(--color-slate-300),transparent)1]
               md:text-6xl"
             >
@@ -63,23 +64,10 @@ export default function HeroHome() {
                 </p>
               </div>
 
-              <div className="mx-auto max-w-xs sm:flex sm:max-w-none sm:justify-center">
+              {/* Single CTA */}
+              <div className="flex justify-center">
                 <a
-                  href="mailto:contact@wildflow.dev"
-                  className="btn group mb-4 w-full bg-gradient-to-t from-blue-600 to-blue-500
-                    text-white shadow-sm hover:brightness-110 sm:mb-0 sm:w-auto"
-                >
-                  <span className="relative inline-flex items-center">
-                    Send a request
-                    <span className="ml-1 text-blue-300 transition-transform group-hover:translate-x-0.5">
-                      →
-                    </span>
-                  </span>
-                </a>
-
-                <a
-                  className="btn w-full bg-white text-gray-800 shadow-sm hover:bg-gray-50
-                    sm:ml-4 sm:w-auto"
+                  className="btn bg-white text-gray-800 shadow-sm hover:bg-gray-50"
                   href="mailto:contact@wildflow.dev"
                 >
                   Contact Us
