@@ -25,7 +25,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
               </div>
 
               <div className="text-xs font-mono uppercase tracking-wide text-blue-700">
-                In Web3 We Trust
+            
               </div>
             </div>
 
