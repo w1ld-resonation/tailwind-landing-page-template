@@ -16,7 +16,7 @@ export default function Header() {
           <div className="flex flex-1 items-center gap-3">
             <Logo />
             <span className="hidden text-[10px] font-mono uppercase tracking-wider text-blue-700 sm:inline-block">
-              In Web3 We Trust
+              
             </span>
           </div>
 
